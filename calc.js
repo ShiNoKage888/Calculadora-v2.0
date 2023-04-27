@@ -75,6 +75,9 @@ function back()
    	
 	//O conteudo da variavel valor sera divido e retirado o ultimo digito
 	d.getElementById('resultado').innerHTML = valor.substring(0,valor.length-1)
+	
+	//A variavel vdisplay é esvaziada para apagar os dados antigos
+	vdisplay = [];
 }
 
 //Essa funçao realizar o calculo utilizando os dados inseridos na calculadora

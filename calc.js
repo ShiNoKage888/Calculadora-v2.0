@@ -37,8 +37,8 @@ function insert(num)
 		// Caso no visor da calculadora tiver um "." nada acontece
 		if (d.getElementById('resultado').innerHTML.includes(".")) {
 			return;
-		// Caso a variavel vdisplay estaja vazia nada acontece
-		} else if (vdisplay.length == 0) {
+		// Caso o visor da calculadora esteja vazio nada acontece
+		} else if (d.getElementById('resultado').innerHTML == "") {
 			return;
 		
 		// Caso nenhuma das condiçoes acima nao tem sido cumprida o valor de num é adicionada no visor da calculadora

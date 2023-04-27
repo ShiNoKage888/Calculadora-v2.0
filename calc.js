@@ -31,10 +31,17 @@ function insert(num)
 			vdisplay.push(d.getElementById('resultado').innerHTML);
 			calcular();
 		}
-
+	// Caso o valor de num seja igual a "."
 	} else if (num == ".") {
+		
+		// Caso no visor da calculadora tiver um "." nada acontece
 		if (d.getElementById('resultado').innerHTML.includes(".")) {
 			return;
+		// Caso a variavel vdisplay estaja vazia nada acontece
+		} else if (vdisplay.length == 0) {
+			return;
+		
+		// Caso nenhuma das condiçoes acima nao tem sido cumprida o valor de num é adicionada no visor da calculadora
 		} else {
 			d.getElementById('resultado').innerHTML += num;
 		}

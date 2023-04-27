@@ -32,6 +32,13 @@ function insert(num)
 			calcular();
 		}
 
+	} else if (num == ".") {
+		if (d.getElementById('resultado').innerHTML.includes(".")) {
+			return;
+		} else {
+			d.getElementById('resultado').innerHTML += num;
+		}
+	
 	} else {
 		// Caso a largura da variavel vdisplay seja igual a 1, chama-se a função clean() e junta os valores do visor da calculadora e da variavel num 
 		if (vdisplay.length == 1) {
